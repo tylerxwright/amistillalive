@@ -1,4 +1,5 @@
-# ![logo](http://amistilla.live/images/combined.png =64x64) Am I Still Alive?
+# Am I Still Alive?
+<img src="https://raw.githubusercontent.com/tylerxwright/amistillalive/master/images/combined.png" width="64" height="64">
 
 A super smart webapp that is able to determine if you are still alive.
 
