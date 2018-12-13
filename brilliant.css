@@ -19,6 +19,13 @@ h1 {
   font-size: 45px;
 }
 
+#status {
+	margin: auto;
+	width: 128px;
+	height: 128px;
+	background-image: url('images/combined.png');
+}
+
 .alalyze {
 	-moz-box-shadow:inset 0px 0px 0px 0px #97c4fe;
 	-webkit-box-shadow:inset 0px 0px 0px 0px #97c4fe;

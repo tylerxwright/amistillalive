@@ -45,15 +45,18 @@ var livingResults = [
 function startSmart() {
   var maybeDeadTimeout = setTimeout(function() {
     document.getElementById("result").innerHTML = "You may have died";
-  }, 3600000);
+    document.getElementById("status").style.backgroundImage = "url('images/maybe.png')";
+  }, 300000);
 
   var deadTimeout = setTimeout(function() {
     document.getElementById("result").innerHTML = "You have died";
-  }, 86400000);
+    document.getElementById("status").style.backgroundImage = "url('images/dead.png')";
+  }, 600000);
   
   var button = document.getElementById("analyze");
   button.addEventListener("click", function() {
     var messageIndex = Math.floor(Math.random() * livingResults.length);
     document.getElementById("result").innerHTML = livingResults[messageIndex];
+    document.getElementById("status").style.backgroundImage = "url('images/alive.png')";
   });
 }
