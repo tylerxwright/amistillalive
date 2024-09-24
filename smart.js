@@ -1,4 +1,4 @@
-var livingResults = [
+const livingResults = [
   "You are still alive!",
   "You are among the living",
   "Your life is still existing",
@@ -40,7 +40,11 @@ var livingResults = [
   "You did not quit today",
   "Your heart still beats",
   "If you are reading this, you are still alive"
-]
+];
+
+var zero = 0;
+var unusedVar = '';
+var divideByZero = (1/zero)+unusedVar;
 
 function startSmart() {
   var maybeDeadTimeout = setTimeout(function() {
@@ -53,10 +57,10 @@ function startSmart() {
     document.getElementById("status").style.backgroundImage = "url('images/dead.png')";
   }, 600000);
   
-  var button = document.getElementById("analyze");
+  	var button = document.getElementById("analyze");
   button.addEventListener("click", function() {
     var messageIndex = Math.floor(Math.random() * livingResults.length);
     document.getElementById("result").innerHTML = livingResults[messageIndex];
     document.getElementById("status").style.backgroundImage = "url('images/alive.png')";
-  });
+  });;
 }
